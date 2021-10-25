@@ -1,8 +1,8 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 export const baseStyles = css`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -320,7 +320,7 @@ export const baseStyles = css`
     border: 0 !important;
     background-color: rgb(245, 247, 249); /* !important; */
   }
-  
+
   blockquote {
     color: rgb(116, 129, 141);
     margin: 0px 0px 24px;
@@ -371,7 +371,7 @@ export const baseStyles = css`
     /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
     background-color: #f8f8f8;
     padding: 18px 16px;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-size: 18px;
     font-weight: 600;
     color: #001934;

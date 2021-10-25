@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import config from '../config';
+import './components/styles/GlobalStyles';
 
 export default class HTML extends React.Component {
   render() {
