@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn';
 import Link from './link';
 import Loadable from 'react-loadable';
-
+import Sidebar from './sidebar';
 import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
@@ -22,8 +22,6 @@ if (isSearchEnabled && config.header.search.indexName) {
     hitComp: `PageHit`,
   });
 }
-
-import Sidebar from './sidebar';
 
 const LoadableComponent = Loadable({
   loader: () => import('./search/index'),
@@ -67,10 +65,6 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               link
               image
             }
-            headerLinks {
-              link
-              text
-            }
           }
         }
       }
@@ -80,15 +74,17 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const twitter = require('./images/twitter.svg');
 
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
+      // const discordBrandsBlock = require('./images/discord-brands-block.svg');
 
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
+      // const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
 
       const {
         site: {
-          siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo, headerLinks },
+          siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo },
         },
       } = data;
+
+      let headerLinks = [];
 
       const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
 
@@ -181,12 +177,12 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     </GitHubButton>
                   </li>
                 ) : null}
-                <li>
+                {/* <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
                     toggleActiveTheme={toggleActiveTheme}
                   />
-                </li>
+                </li> */}
               </ul>
             </div>
           </nav>

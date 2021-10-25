@@ -2,25 +2,19 @@ const config = {
   gatsby: {
     pathPrefix: '/',
     siteUrl: 'https://code.sapalo.dev',
-    gaTrackingId: null,
+    gaTrackingId: '291001111',
     trailingSlash: false,
   },
   header: {
     logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://code.sapalo.dev/',
-    title: "",
+    logoLink: 'https://code.sapalo.dev',
+    title:
+      "Darren's Coding",
     githubUrl: 'https://github.com/darrensapalo/code',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/darrensapalo" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
-		      </div>
-		    </a>
-		  </li>
-			`,
-    links: [{ text: '', link: '' }],
+    social: '',
+    links: [],
     search: {
       enabled: false,
       indexName: '',
@@ -31,34 +25,42 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
+      '/introduction',
       '/concepts',
+      '/strategies',
       '/best-practices',
       '/tools',
-      '/opinions'
+      '/personal-opinions',
     ],
     collapsedNav: [
-      
+      '/concepts', 
+      '/strategies',
+      '/best-practices',
+      '/tools',
+      '/personal-opinions',
     ],
     links: [
-      // { text: 'Darren\'s blog', link: 'https://sapalo.dev' },
+      { text: 'Personal blog', link: 'https://sapalo.dev' },
+      { text: 'Twitter', link: 'https://twitter.com/darrensapalo' },
+      { text: 'LinkedIn', link: 'https://www.linkedin.com/in/%F0%9F%92%BB-darren-karl-sapalo-3a384495' }
     ],
     frontline: false,
-    ignoreIndex: true,
+    ignoreIndex: false,
     title:
-      "Darren's Coding Style",
+      "Darren's Coding",
   },
   siteMetadata: {
-    title: 'Coding Style | Darren Sapalo',
-    description: 'Things I like to use when I build stuff',
+    title: 'Coding - Darren',
+    description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
-    docsLocation: 'https://github.com/darrensapalo/code/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: 'https://github.com/darrensapalo/code/blob/main/content/',
+    favicon: 'https://img.icons8.com/fluency/48/000000/stack.png',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Darren\'s Coding',
-      short_name: 'Darren \'s Coding',
+      name: 'Gatsby Gitbook Starter',
+      short_name: 'GitbookStarter',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
