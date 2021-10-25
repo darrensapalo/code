@@ -31,14 +31,13 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/languages',
-      '/tools', 
-      '/libraries', 
-      '/paradigms',
-      '/strategies', 
+      '/concepts',
+      '/best-practices',
+      '/tools',
+      '/opinions'
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      
     ],
     links: [
       // { text: 'Darren\'s blog', link: 'https://sapalo.dev' },
@@ -58,8 +57,8 @@ const config = {
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Darren\'s Coding Style',
-      short_name: 'Learn Covid',
+      name: 'Darren\'s Coding',
+      short_name: 'Darren \'s Coding',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
