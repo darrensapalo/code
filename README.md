@@ -1,7 +1,43 @@
-# code
-A simple repository that documents my dev tools, and things that I like to use
+# Darren's Coding
 
-* [My personal fisher toolset](https://github.com/darrensapalo/fisher-work)
-* [Screen recording on Unix](https://github.com/phw/peek)
+Hi there. I'm Darren, a software architect and full stack software developer.
 
-Currently a WIP, cause i'm busy as hell
+This is where I write about technologies and concepts that I keep in my 
+problem-solving belt.  You will see the things I've been learning, and how 
+I practice my reading and my writing. 
+
+You can get started by reading about [general concepts](./content/concepts).
+
+You can follow that up with reading [pragmatic, best practices](./content/best-practices) I've been using.
+
+If you enjoy applying your thinking and knowledge for practical use even 
+outside of software development, then you would enjoy browsing through 
+[strategies](./content/strategies) or my personal blog's 
+[mental models list](https://sapalo.dev/category/mental-models/).
+
+**What is this website exactly?**
+
+You can think of this website as a public notebook, a place where I write
+down the map of my ideas and current understanding of things. This means that these
+are draft ideas; very rough. They may not be exact but they have been serving a purpose.
+Those that remain stand the test of experiments, and those ideas that are thrown away 
+become valuable stories with a lesson to be learned. 
+
+A friendly reminder that [even the best maps are imperfect](https://fs.blog/2015/11/map-and-territory/).
+But nonetheless, you are free to see what my map looks like. Feel free to read, reflect,
+personalize, and contextualize it for yourself. Pick up and play with anything up you like. 
+
+# Contributing
+
+If you have a question or want to discuss something, click the Edit on 
+Github button and submit a PR.
+
+# Work for Hire
+
+Unfortunately, this website is **specifically designed as a learning portal** 
+where I write about what I've learned (and continue to learn). If that's what you're
+looking for, then great!
+
+If you're interested to find my work portfolio ⛰️, this is available in 
+my personal tech blog https://www.sapalo.dev.
+

@@ -1,12 +1,12 @@
-import { Layout, Link } from '$components';
-import { graphql } from 'gatsby';
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import config from '../../config';
-import NextPrevious from '../components/NextPrevious';
-import { Edit, StyledHeading, StyledMainWrapper } from '../components/styles/Docs';
+import { graphql } from 'gatsby';
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 
+import { Layout, Link } from '$components';
+import NextPrevious from '../components/NextPrevious';
+import config from '../../config';
+import { Edit, StyledHeading, StyledMainWrapper } from '../components/styles/Docs';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
@@ -17,7 +17,6 @@ export default class MDXRuntimeTest extends Component {
     if (!data) {
       return this.props.children;
     }
-
     const {
       allMdx,
       mdx,
@@ -26,8 +25,7 @@ export default class MDXRuntimeTest extends Component {
       },
     } = data;
 
-    const gitHub = require('../components/images/github.svg');
-
+    const githubIcon = require('../components/images/github.svg').default;
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
       .filter(slug => slug !== '/')
@@ -64,6 +62,7 @@ export default class MDXRuntimeTest extends Component {
 
           return { title: node.fields.title, url: node.fields.slug };
         }
+        return null;
       });
 
     // meta tags
@@ -96,7 +95,7 @@ export default class MDXRuntimeTest extends Component {
           <Edit className={'mobileView'}>
             {docsLocation && (
               <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
-                <img src={gitHub} alt={'Github logo'} /> Edit on GitHub
+                <img src={githubIcon} alt={'Github logo'} /> Edit on GitHub
               </Link>
             )}
           </Edit>
